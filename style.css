@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* * {
+  border: 1px solid gray;
+} */
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+/* Nav elements */
+
+nav {
+  grid-row: 1/3;
+  background-color: #38bdf8;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+nav > div {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-items: start;
+  gap: 1rem;
+}
+
+.nav-item {
+  display: grid;
+  grid-template-columns: 40px 200px;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.nav-item > span {
+  width: 100%;
+}
+
+.nav-title {
+  font-size: 1.8rem;
+}
+
+nav h1 > i {
+  font-size: 2.2rem;
+}
+
+/* header elements */
+
+header {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 2fr 3fr;
+  margin: 1rem 0;
+}
+
+nav span {
+  margin: 0 auto;
+}
+
+nav a {
+  color: #fff;
+}
+
+header .top-left,
+header .top-right,
+header .bottom-left,
+header .bottom-right,
+.card-icons,
+.trending-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 0 2rem;
+}
+
+.top-left > span {
+  font-size: 1.2rem;
+}
+
+input[type='text'] {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 25px;
+  border: none;
+  padding: 6px 15px;
+  font-size: medium;
+}
+
+input[type='text']:focus {
+  outline: none;
+  background-color: #e1e1e1;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+header .top-right {
+  justify-content: end;
+  gap: 1.8rem;
+}
+
+.top-right div {
+  font-size: large;
+  font-weight: 700;
+}
+
+.avatar.small {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+
+.mdi-bell-ring-outline {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mdi-bell-ring-outline:active {
+  font-size: 21px;
+}
+
+header .bottom-right {
+  justify-content: space-between;
+}
+
+.header-name div:first-child {
+  font-weight: 700;
+  font-size: small;
+}
+
+.header-name div:last-child {
+  font-weight: 700;
+  font-size: larger;
+}
+
+.avatar.big {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+button {
+  color: #fff;
+  font-weight: 700;
+  background-color: #38bdf8;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* main elements */
+
+main {
+  background-color: #e5e7eb;
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  padding: 1rem 2rem;
+  column-gap: 1.5rem;
+}
+
+main div > h3 {
+  margin-bottom: 0.5rem;
+}
+
+.projects-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  flex-grow: 1;
+}
+
+.card-icons {
+  font-size: 1.4rem;
+  justify-content: end;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.card-icons i {
+  cursor: pointer;
+}
+
+.card-icons i:active {
+  transform: scale(0.95);
+}
+
+.projects,
+.side-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: small;
+
+  color: #374151;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .left-band {
+  width: 6px;
+  background-color: orange;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.project-card .content {
+  padding: 1rem 1.5rem;
+}
+
+.project-info .title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #000;
+}
+
+.side-card > div {
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: small;
+
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.side-card p {
+  font-size: 12px;
+  margin-top: 2px;
+  color: #374151;
+}
+
+.side-card p a {
+  color: #374151;
+}
+
+.side-card h4 {
+  margin: 0;
+}
+
+.line-break {
+  border: 1px solid #e5e7eb;
+  margin: 0.5rem;
+}
+
+.trending-item {
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.trending-item div {
+  font-weight: 400;
+}
+
+.trending img {
+  border: 1px solid orange;
+}
